@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="901024320020-cih8u5h6i4ig2fn9th6sdsce18s81ov9.apps.googleusercontent.com">
     <title>Sistem Pakar Deteksi Kesehatan Mental</title>
 
     <!-- Font Icon -->
@@ -17,6 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript" src="https://mail.google.com/mail/u/0/?logout&hl=en"></script>
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -50,9 +51,8 @@
 
                             <h6 style="text-align: center">ATAU</h6>
                                 
-                            <center><div class="g-signin2" data-onsuccess="onSignIn" style="margin-top:20px" ></div></center>
+                            <center><div class="g-signin2" data-onsuccess="onSignIn" style="margin-top:5px" ></div></center>
                       
-                        
                         </form>
                     </div>
                     <div class="signup-image">
@@ -65,6 +65,18 @@
     </div>
 
     <!-- JS -->
-    
+    <script>
+        var email;
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            var emailUser = profile.getEmail();
+            var email = String(emailUser);
+            
+            $.post("check.php", {postemail:email});
+            
+            document.getElementById("lanjut").style.display="inline";
+        }
+        
+    </script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
