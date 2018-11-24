@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <title>Sistem Pakar Deteksi Kesehatan Mental</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/google.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/pertanyaan.css">
+
+</head>
+<body>
+        <center><nav><h2 style="margin-top:50px; margin-left:30px;"><strong>KECEMASAN</strong></h2></nav></center>
+    <div class="container ">
+        <div class="row i-am-centered">
+
+           <div class="col-sm-6 col-md-6 col-xs-12 ">
+                    <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                  <h3><span class="label label-warning" style="background-color:#C4C4C4" id="qid">36</span> THREE is CORRECT</h3>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="col-xs-3 col-xs-offset-5">
+                                     <div id="loadbar" style="display: none;">
+                                        <div class="blockG" id="rotateG_01"></div>
+                                        <div class="blockG" id="rotateG_02"></div>
+                                        <div class="blockG" id="rotateG_03"></div>
+                                        <div class="blockG" id="rotateG_04"></div>
+                                        <div class="blockG" id="rotateG_05"></div>
+                                        <div class="blockG" id="rotateG_06"></div>
+                                        <div class="blockG" id="rotateG_07"></div>
+                                        <div class="blockG" id="rotateG_08"></div>
+                                    </div>
+                                </div>
+                      
+                                <div class="quiz" id="quiz" data-toggle="buttons">
+                                 <label class="element-animation1 btn btn-lg btn-default btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
+                                 <label class="element-animation2 btn btn-lg btn-default btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">2 Two</label>
+                             
+                             </div>
+                         </div>
+                            <div class="modal-footer text-muted">
+                                <span id="answer"></span>
+                            </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-xs-12" style="margin-right:10px;">
+                    <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                  <h3><span class="label label-warning" style="background-color:#C4C4C4" id="qid">37</span> THREE is CORRECT</h3>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="col-xs-3 col-xs-offset-5">
+                                     <div id="loadbar" style="display: none;">
+                                        <div class="blockG" id="rotateG_01"></div>
+                                        <div class="blockG" id="rotateG_02"></div>
+                                        <div class="blockG" id="rotateG_03"></div>
+                                        <div class="blockG" id="rotateG_04"></div>
+                                        <div class="blockG" id="rotateG_05"></div>
+                                        <div class="blockG" id="rotateG_06"></div>
+                                        <div class="blockG" id="rotateG_07"></div>
+                                        <div class="blockG" id="rotateG_08"></div>
+                                    </div>
+                                </div>
+                      
+                                <div class="quiz" id="quiz" data-toggle="buttons">
+                                 <label class="element-animation1 btn btn-lg btn-default btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
+                                 <label class="element-animation2 btn btn-lg btn-default btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">2 Two</label>
+                             
+                             </div>
+                         </div>
+                            <div class="modal-footer text-muted">
+                                <span id="answer"></span>
+                            </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-xs-12" style="margin-right:10px;">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                              <h3><span class="label label-warning" style="background-color:#C4C4C4" id="qid">38</span> THREE is CORRECT</h3>
+                          </div>
+                          <div class="modal-body">
+                              <div class="col-xs-3 col-xs-offset-5">
+                                 <div id="loadbar" style="display: none;">
+                                    <div class="blockG" id="rotateG_01"></div>
+                                    <div class="blockG" id="rotateG_02"></div>
+                                    <div class="blockG" id="rotateG_03"></div>
+                                    <div class="blockG" id="rotateG_04"></div>
+                                    <div class="blockG" id="rotateG_05"></div>
+                                    <div class="blockG" id="rotateG_06"></div>
+                                    <div class="blockG" id="rotateG_07"></div>
+                                    <div class="blockG" id="rotateG_08"></div>
+                                </div>
+                            </div>
+                  
+                            <div class="quiz" id="quiz" data-toggle="buttons">
+                             <label class="element-animation1 btn btn-lg btn-default btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
+                             <label class="element-animation2 btn btn-lg btn-default btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">2 Two</label>
+                         
+                         </div>
+                     </div>
+                        <div class="modal-footer text-muted">
+                            <span id="answer"></span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6 col-md-6 col-xs-12" style="margin-right:10px;">
+            <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                          <h3><span class="label label-warning" style="background-color:#C4C4C4" id="qid">39</span> THREE is CORRECT</h3>
+                      </div>
+                      <div class="modal-body">
+                          <div class="col-xs-3 col-xs-offset-5">
+                             <div id="loadbar" style="display: none;">
+                                <div class="blockG" id="rotateG_01"></div>
+                                <div class="blockG" id="rotateG_02"></div>
+                                <div class="blockG" id="rotateG_03"></div>
+                                <div class="blockG" id="rotateG_04"></div>
+                                <div class="blockG" id="rotateG_05"></div>
+                                <div class="blockG" id="rotateG_06"></div>
+                                <div class="blockG" id="rotateG_07"></div>
+                                <div class="blockG" id="rotateG_08"></div>
+                            </div>
+                        </div>
+              
+                        <div class="quiz" id="quiz" data-toggle="buttons">
+                         <label class="element-animation1 btn btn-lg btn-default btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
+                         <label class="element-animation2 btn btn-lg btn-default btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">2 Two</label>
+                     
+                     </div>
+                 </div>
+                    <div class="modal-footer text-muted">
+                        <span id="answer"></span>
+                    </div>
+              </div>
+        </div>
+    </div>
+
+    
+    <div class="col-sm-6 col-md-6 col-xs-12" style="margin-right:10px;">
+        <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h3><span class="label label-warning" style="background-color:#C4C4C4" id="qid">40</span> THREE is CORRECT</h3>
+                  </div>
+                  <div class="modal-body">
+                      <div class="col-xs-3 col-xs-offset-5">
+                         <div id="loadbar" style="display: none;">
+                            <div class="blockG" id="rotateG_01"></div>
+                            <div class="blockG" id="rotateG_02"></div>
+                            <div class="blockG" id="rotateG_03"></div>
+                            <div class="blockG" id="rotateG_04"></div>
+                            <div class="blockG" id="rotateG_05"></div>
+                            <div class="blockG" id="rotateG_06"></div>
+                            <div class="blockG" id="rotateG_07"></div>
+                            <div class="blockG" id="rotateG_08"></div>
+                        </div>
+                    </div>
+          
+                    <div class="quiz" id="quiz" data-toggle="buttons">
+                     <label class="element-animation1 btn btn-lg btn-default btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
+                     <label class="element-animation2 btn btn-lg btn-default btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">2 Two</label>
+                 
+                 </div>
+             </div>
+                <div class="modal-footer text-muted">
+                    <span id="answer"></span>
+                </div>
+          </div>
+    </div>
+</div>
+
+    
+
+            
+            
+       </div>
+       <a href="pertanyaanKecemasan9.html"><input  class="btn-lg btn-primary" type="submit" value="NEXT" style="margin-bottom: 50px; margin-top:50px; margin-left:545px;"></a>          
+    </div>
+    
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
